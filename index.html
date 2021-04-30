@@ -62,49 +62,6 @@
             filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
         }
 
-    	#categories {
-            margin-left: auto;
-            margin-right: auto;
-    	    display: flex;
-            position: relative;
-    	}
-
-        #categories div {
-            flex-grow: 1;
-            transition: transform 0.5s ease;
-            -webkit-transition: -webkit-transform 0.5s ease;
-        }
-
-        #categories img {
-            -webkit-filter: saturate(0%);
-            filter: saturate(0%);
-            -webkit-transition: -webkit-filter 0.5s;
-            transition: filter 0.5s;
-
-        }
-
-        #categories img:hover {
-            -webkit-filter: saturate(100%);
-            filter: saturate(100%);
-        }
-
-        #categories p {
-            margin-top: 0px;
-        }
-
-        .spinout {
-            transform: rotateY(90deg);
-            -webkit-transform: rotateY(90deg);
-        }
-
-        #inner {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            opacity: 0;
-            text-align: left;
-        }
-
         #kotori {
             position: fixed;
             left: 0px;
@@ -138,22 +95,6 @@
         <p>Shoot me an email at <a href="mailto:connorbworley@gmail.com">connorbworley@gmail.com</a>.</p>
     </div>
     <div id="kotori"><img src="/img/kotori.png" /></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script>
-        function spinout() {
-            $("#background").parent().addClass("spinout");
-            setTimeout(function(){$("#skills").parent().addClass("spinout");}, 100);
-            setTimeout(function(){$("#experience").parent().addClass("spinout");}, 200);
-        }
-
-        $("#categories a").click(function() {
-            spinout();
-            setTimeout(function(){
-                $("#inner").animate({"opacity":1}, 500);
-                $("#categories div").animate({"height":$("#inner").height()}, 500);
-            }, 300);
-        })
-    </script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
