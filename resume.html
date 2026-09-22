@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                line-height: 125%;
+                margin: 0 auto;
+                max-width: 8.5in;
+
+            }
+
+            .flex-ltr {
+                display: flex;
+            }
+
+            .name {
+                color: rgb(68, 114, 196);
+                flex-grow: 1;
+            }
+
+            .info {
+                text-align: right;
+            }
+
+            ul {
+                list-style-type: circle;
+                margin-top: 0;
+                padding-top: 0;
+            }
+
+            .job-title {
+                text-indent: 2.5em;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-ltr">
+            <br/>
+            <h1 class="name">Emma Worley</h1>
+            <span class="info">
+                <a href="mailto:emma@emma.gg">emma@emma.gg</a><br/>
+                (510) 423-3651
+            </span>
+        </div>
+        <p>
+            <i>Education</i>
+            <ul>
+                <li><b>UC Berkeley</b> Class of 2018.B.S. in EECS, minor in Japanese</li>
+            </ul>
+        </p>
+        <p>
+            <i>Skills</i>
+            <ul>
+                <li>Proficient in a variety of programming languages including Python, Go, and Rust.</li>
+                <li>Expertise in web backend and containerization technologies.</li>
+                <li>Experience building and programming remote controlled robots.</li>
+            </ul>
+        </p>
+        <p>
+            <i>Experience</i>
+            <p class="job-title"><b>Netflix</b> May 2023 &mdash; <i>present</i></p>
+            <p class="job-title"><b>Color</b> May 2022 &mdash; February 2023</p>
+            <ul>
+                <li>Built full stack account recovery functionality.</li>
+                <li>Re-architected Color's faxing vendor integration to support self-serve share-to-provider functionality.</li>
+                <li>Upgraded Color's lab management system to modern versions of Node.js and React.</li>
+            </ul>
+
+            <p class="job-title"><b>Yelp</b> February 2021 &mdash; April 2022</p>
+            <ul>
+                <li>Mitigated emergent P0 incidents involving Yelp's previous React server-side-rendering architecture.</li>
+                <li><a href="https://engineeringblog.yelp.com/2022/02/server-side-rendering-at-scale.html">Successfully rearchitected Yelp's approach to server-side-rendering.</a></li>
+            </ul>
+
+            <p class="job-title"><b>Dropbox</b> January 2020 &mdash; January 2021</p>
+            <ul>
+                <li>Added codegen functionality to Dropbox's public and private API edges to support additional API types.</li>
+                <li>Proposed a network-level rate limiting system for all internal microservices.</li>
+                <li>Modernized the public C# SDK from .NET Framework to .NET Core.</li>
+            </ul>
+
+            <p class="job-title"><b>Yelp</b> August 2018 &mdash; December 2019</p>
+            <ul>
+                <li>Built developer tools to support sandboxed microservice environments.</li>
+                <li>Added VCR record-replay functionality to multi-service test sandboxes, dramatically improving run-time.</li>
+                <li>Added test run-time and flake rate metric collection to nearly 200 services.</li>
+                <li>Wrote end-to-end testing documentation and tutorials for company-wide use.</li>
+                <li>Supervised deployments of Yelp's monolith codebase every two weeks.</li>
+                <li>Screened resumes and interviewed new team candidates.</li>
+            </ul>
+
+            <p class="job-title"><b>Prior experience available upon inquiry.</b></p>
+        </p>
+        <p>
+            <i>Other Involvements</i>
+            <p class="job-title"><b>FIRST Robotics Competition Teams 5499 and 5419</b> February 2015 &mdash; present</p>
+            <ul>
+                <li>Wrote software to control complex robots.</li>
+                <li>Taught Berkeley High School students the basics of C++ and robotic control systems.</li>
+                <li>Managed team finances, travel logistics, and other organizational aspects of the team.</li>
+                <li>2017 World Championship Winners.</li>
+            </ul>
+        </p>
+    </body>
+</html>
